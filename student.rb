@@ -9,7 +9,7 @@ class Student < Person
   end
 
   def paly_hooky
-    "¯\(ツ)/¯"
+    '¯(ツ)/¯'
   end
 
   def classroom=(classroom)
