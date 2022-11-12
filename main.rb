@@ -6,7 +6,7 @@ def main
   print_menu(app)
 end
 
-def print_menu(app) # rubocop:disable Metrics/CyclomaticComplexity
+def print_menu(app)
   loop do
     menu
     input = user_input

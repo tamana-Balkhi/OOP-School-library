@@ -12,6 +12,7 @@ class App
     @rentals = []
   end
 
+  
   def list_books
     puts 'Books: '
     @books.each { |book| puts "Title: \"#{book.title}\", Author: #{book.author}" }

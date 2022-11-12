@@ -3,14 +3,14 @@ require_relative './capitalize'
 require_relative './trimmer'
 
 class Person < Nameable
-  attr_reader :id
   attr_accessor :name, :age, :rentals
+  attr_reader :id
 
-  def initialize(age, name = 'Unknown', parent_permission: true)
+  def initialize(age, name, parent_permission)
     super()
-    @id = Random.rand(1..200)
-    @name = name
+    @id = Random.rand(1..1000)
     @age = age
+    @name = name
     @parent_permission = parent_permission
     @rentals = []
   end
@@ -20,11 +20,11 @@ class Person < Nameable
   end
 
   def correct_name
-    @correctable_name = name
+    @name
   end
 
-  def add_rentals(date, book_info)
-    Rental.new(date, book_info, self)
+  def add_rental(book, date)
+    Rental.new(date, book, self)
   end
 
   private
@@ -33,10 +33,3 @@ class Person < Nameable
     @age >= 18
   end
 end
-
-p person = Person.new(22, 'maximilianus')
-p person.correct_name
-p capitalized_person = Capitalize.new(person)
-p capitalized_person.correct_name
-p capitalized_trimmed = Trimmer.new(capitalized_person)
-p capitalized_trimmed.correct_name
