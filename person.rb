@@ -2,7 +2,6 @@ require_relative './nameable'
 require_relative './capitalize'
 require_relative './trimmer'
 
-
 class Person < Nameable
   attr_reader :id, :rentals
   attr_accessor :name, :age
@@ -34,7 +33,6 @@ class Person < Nameable
     @age >= 18
   end
 end
-
 
 p person = Person.new(22, 'maximilianus')
 p person.correct_name
