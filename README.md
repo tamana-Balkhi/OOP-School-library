@@ -46,6 +46,12 @@ Navigate through directories using change directory (cd) command to where you wa
 - GitHub: [@tamana-Balkhi](https://github.com/tamana-Balkhi)
 - LinkedIn: [Tamana Balkhi](https://www.linkedin.com/in/tamana-balkhi-1212171b6/)
 
+👤 **Edith oga**
+
+- Github [@edith-oga](https://github.com/vigehi)
+- LinkedIn: [Edith Oga](https://www.linkedin.com/in/edith-oga/)
+
+
 
 ## 🤝 Contributing
 
