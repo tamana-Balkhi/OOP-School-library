@@ -1,5 +1,6 @@
 class Menu
   def list_menu(app) # rubocop:disable Metrics/CyclomaticComplexity
+    # requests for input and input validation
     loop do
       menu
       input = user_input
