@@ -11,8 +11,9 @@
   },
   {
     "id" : 100,
+    "type":"teacher",
     "age" : 15,
     "name" : "Ali",
-    "parent_permission" : true
+    "specialization" : "CS"
   }
 ]
