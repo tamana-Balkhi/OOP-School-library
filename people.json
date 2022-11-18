@@ -1,1 +1,1 @@
-[]
+[{"name":"ahmad","age":12,"permission":{"parent_permission":{"parent_permission":true}},"type":"Student"},{"name":"ali","age":22,"specialization":"computer","type":"Teacher"}]
