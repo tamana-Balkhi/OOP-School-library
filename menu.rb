@@ -1,3 +1,11 @@
+require './student'
+require './classroom'
+require './book'
+require './rental'
+require './person'
+require './teacher'
+require './app'
+
 class Menu
   def list_menu(app) # rubocop:disable Metrics/CyclomaticComplexity
     # requests for input and input validation
