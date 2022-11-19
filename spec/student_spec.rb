@@ -11,7 +11,7 @@ describe 'Student' do
     @classroom = Classroom.new(@label)
   end
   it 'Paly hooky' do
-    expect(@student.paly_hooky).to eq "¯\(ツ)/¯"
+    expect(@student.paly_hooky).to eq '¯(ツ)/¯'
   end
   it 'Classroom' do
     expect(@classroom).to be_an_instance_of Classroom
