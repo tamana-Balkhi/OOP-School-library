@@ -29,20 +29,13 @@ describe Book do
     book = Book.new(title, author)
     classroom = Classroom.new('Grade 1')
     student = Student.new(classroom, 1, 'Maxim', true)
-    teacher = Teacher.new('', 25, 'new teacher')
     it 'Rentals count should be zero(0) on start of project' do
-      expect(book.rental.length).to eq 0
+      expect(book.rentals.length).to eq 0
     end
 
     it 'Add rentals' do
       Rental.new('2022/11/17', book, student)
-      expect(book.rental.length).to eq 1
-    end
-
-    it 'Allow addition of rentals' do
-      Rentals.new('2022/11/20', book, teacher)
-      Rentals.new('2022/11/21', book, student)
-      expect(book.rental.length).to eq 3
+      expect(book.rentals.length).to eq 1
     end
   end
 end
